@@ -12,13 +12,17 @@ sudo dnf install -y git gcc make curl \
 Check the latest version on https://go.dev/dl/
 
 cd /tmp
+
 curl -LO https://go.dev/dl/go1.22.2.linux-amd64.tar.gz
+
 sudo rm -rf /usr/local/go
+
 sudo tar -C /usr/local -xzf go1.22.2.linux-amd64.tar.gz
 
 Add Go to your environment:
 
 echo 'export PATH=$PATH:/usr/local/go/bin' >> ~/.bashrc
+
 source ~/.bashrc
 
 Verify:
@@ -28,7 +32,9 @@ go version
 # 3. Clone the HPB Repository
 
 cd /opt
+
 sudo git clone https://github.com/nextcloud/spreed-signaling.git
+
 cd spreed-signaling
 
 # 4. Build the Signaling Server
@@ -42,6 +48,7 @@ It will create a binary file named signaling.
 Copy example config:
 
 cp signaling.conf.in signaling.conf
+
 nano signaling.conf
 
 Modify these key settings:
@@ -75,7 +82,7 @@ Check that it starts without errors. You should see logs saying it's listening o
 
 Create the service file:
 
-sudo nano /etc/systemd/system/nextcloud-signaling.service
+ sudo nano /etc/systemd/system/nextcloud-signaling.service
 
 Paste the following:
 
@@ -101,21 +108,23 @@ sudo systemctl enable --now nextcloud-signaling
 
 # 8. Allow Firewall Port (If Needed)
 
-sudo firewall-cmd --add-port=8080/tcp --permanent
-sudo firewall-cmd --reload
+ sudo firewall-cmd --add-port=8080/tcp --permanent
+ 
+ sudo firewall-cmd --reload
 
 Or if you're using a reverse proxy (e.g., Nginx), allow 443 only.
 # 9. Update Nextcloud Config
 
 On your web server, edit:
 
-sudo -u apache php /var/www/html/nextcloud/occ config:system:set spreed:signaling_servers 0 --value="https://your-hpb-server"
-sudo -u apache php /var/www/html/nextcloud/occ config:system:set spreed:signaling_secret --value="your-signaling-secret"
+ sudo -u apache php /var/www/html/nextcloud/occ config:system:set spreed:signaling_servers 0 --value="https://your-hpb-server"
+ 
+ sudo -u apache php /var/www/html/nextcloud/occ config:system:set spreed:signaling_secret --value="your-signaling-secret"
 
 # 10. Verify HPB is Working
 
 Run:
 
-sudo -u apache php /var/www/html/nextcloud/occ talk:signaling:check
+ sudo -u apache php /var/www/html/nextcloud/occ talk:signaling:check
 
 If it’s successful, you're all set!
