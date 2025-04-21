@@ -128,3 +128,8 @@ Run:
  sudo -u apache php /var/www/html/nextcloud/occ talk:signaling:check
 
 If it’s successful, you're all set!
+
+
+# Diffeerence between Selfhosted HPB and Enterprise HPB
+![Screenshot from 2025-04-21 14-57-47](https://github.com/user-attachments/assets/46edb9c9-e521-45c8-87fc-4ec34df7fc50)
+
