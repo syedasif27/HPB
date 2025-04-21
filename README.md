@@ -131,5 +131,9 @@ If it’s successful, you're all set!
 
 
 # Diffeerence between Selfhosted HPB and Enterprise HPB
-![Screenshot from 2025-04-21 14-57-47](https://github.com/user-attachments/assets/46edb9c9-e521-45c8-87fc-4ec34df7fc50)
+![Screenshot from 2025-04-21 15-53-00](https://github.com/user-attachments/assets/df352a60-94a0-4d89-a791-4809014ef25a)
+
+# Difference between TURN and STUN server
+![Screenshot from 2025-04-21 15-48-56](https://github.com/user-attachments/assets/471a1770-f96e-4387-86cb-71b94ab23853)
+
 
