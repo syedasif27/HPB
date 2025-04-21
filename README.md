@@ -1,5 +1,5 @@
-# HPB for Nextcloud talk 
-For installing HPB for nextcloud talk
+# Installation and setup of selfhosted High performance Bakcend 
+  
 # 1. Install System Dependencies
 
 sudo dnf install -y git gcc make curl \
@@ -135,5 +135,11 @@ If it’s successful, you're all set!
 
 # Difference between TURN and STUN server
 ![Screenshot from 2025-04-21 15-48-56](https://github.com/user-attachments/assets/471a1770-f96e-4387-86cb-71b94ab23853)
+
+# Diagram of Mesh topology and SFU (Selective Forwarding Unit)
+![ChatGPT Image Apr 21, 2025, 03_49_06 PM](https://github.com/user-attachments/assets/eca820c2-dea6-443d-af93-392e3e28e3a1)
+
+# Difference between Mesh and SFU (Group call of 5 users)
+![Screenshot from 2025-04-21 16-09-43](https://github.com/user-attachments/assets/3c6a6d86-0afc-49b5-9619-98e5bb6dc0c5)
 
 
