@@ -142,4 +142,5 @@ If it’s successful, you're all set!
 # Difference between Mesh and SFU (Group call of 5 users)
 ![Screenshot from 2025-04-21 16-09-43](https://github.com/user-attachments/assets/3c6a6d86-0afc-49b5-9619-98e5bb6dc0c5)
 
-
+# Nextcloud forum solution
+https://help.nextcloud.com/t/signaling-server-for-talk-with-25-users/74438
